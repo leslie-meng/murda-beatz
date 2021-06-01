@@ -1,0 +1,10 @@
+@mixin google-font($family, $weight) {
+	@import url('http://fonts.googleapis.com/css2?family=#{$family}:wght@#{$weight}&display=swap');
+}
+
+@include google-font('Sen', 400);
+@include google-font('Sen', 800);
+@include google-font('Sen', 700);
+@include google-font('Sedgwick Ave', 400);
+$font-highlight: Sedgwick Ave, cursive;
+$main-font: Sen, sans-serif;

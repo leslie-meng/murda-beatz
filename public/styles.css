@@ -1,0 +1,69 @@
+@import url("http://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap");
+@import url("http://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap");
+@import url("http://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
+@import url("http://fonts.googleapis.com/css2?family=Sedgwick Ave:wght@400&display=swap");
+.white-title {
+  font-family: Sen, sans-serif;
+  color: rgba(255, 255, 255, 0.0001);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  height: 84px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+}
+
+.black-title {
+  font-family: Sen, sans-serif;
+  color: rgba(255, 255, 255, 0.0001);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  height: 84px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+}
+
+.black-button {
+  border-radius: 21px;
+}
+
+header #logo {
+  position: absolute;
+  width: 169px;
+  height: 134px;
+  left: 50px;
+  top: 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  width: 584px;
+  height: 22px;
+  left: 806px;
+  top: 47px;
+  justify-content: space-around;
+}
+nav a {
+  text-transform: uppercase;
+  font-family: Sen, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 80px;
+  color: #000000;
+}
+
+body {
+  background-color: #f6c82a;
+}
+body .test {
+  font-family: Sedgwick Ave, cursive;
+}

@@ -1,0 +1,69 @@
+@use '_colors';
+@use '_fonts';
+
+@mixin title($title: White) {
+	font-family: fonts.$main-font;
+	color: rgba(255, 255, 255, 0.0001);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	height: 84px;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 800;
+	letter-spacing: 14px;
+	text-transform: uppercase;
+}
+@mixin button(
+	$bg: colors.$mbYellow,
+	$font: colors.$black,
+	$rollBg: colors.$white,
+	$rollFont: colors.$black
+) {
+	border-radius: 21px;
+}
+.white-title {
+	@include title;
+}
+
+.black-title {
+	@include title($title: colors.$black);
+}
+.black-button {
+	@include button($bg: colors.$black);
+}
+
+header {
+	#logo {
+		position: absolute;
+		width: 169px;
+		height: 134px;
+		left: 50px;
+		top: 24px;
+	}
+}
+nav {
+	display: flex;
+	align-items: center;
+	text-align: right;
+	text-transform: uppercase;
+	position: absolute;
+	width: 584px;
+	height: 22px;
+	left: 806px;
+	top: 47px;
+	justify-content: space-around;
+	a {
+		text-transform: uppercase;
+		font-family: fonts.$main-font;
+		font-weight: 800;
+		font-size: 18px;
+		line-height: 80px;
+		color: colors.$black;
+	}
+}
+body {
+	background-color: colors.$mbYellow;
+	.test {
+		font-family: fonts.$font-highlight;
+	}
+}
