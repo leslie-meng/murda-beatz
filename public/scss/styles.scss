@@ -1,12 +1,13 @@
 @use '_colors';
 @use '_fonts';
 @use '_hero';
+@use '_releases';
 
 @mixin title($title: White) {
 	font-family: fonts.$main-font;
 	color: rgba(255, 255, 255, 0.0001);
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: $title;
 	height: 84px;
 	font-size: 35px;
 	font-style: normal;
@@ -59,9 +60,13 @@
 		$rollFont: colors.$black
 	);
 }
+* {
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
 button {
 	@include button;
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 }
 
@@ -99,8 +104,14 @@ nav {
 main {
 	position: relative;
 }
+#app {
+	z-index: 2;
+}
 body {
-	background-color: colors.$mbYellow;
+	// position: relative;
+	// height: 100%;
+	// width: 100%;
+
 	.test {
 		font-family: fonts.$font-highlight;
 		font-size: 20px;
@@ -109,4 +120,22 @@ body {
 		}
 		letter-spacing: 3.33333px;
 	}
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: colors.$mbGrey;
+	&::before {
+		z-index: 1;
+		position: absolute;
+		background-image: url('/images/Mask.png');
+		opacity: 0.4;
+		content: '';
+		background-size: cover;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+	}
+}
+#background {
 }

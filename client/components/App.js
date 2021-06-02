@@ -6,6 +6,7 @@ import Tour from './Tour';
 import Store from './Store';
 import Subscribe from './Subscribe';
 import Videos from './Videos';
+import Footer from './Footer';
 const App = () => {
 	return (
 		<>
@@ -16,6 +17,7 @@ const App = () => {
 			<Store />
 			<Photos />
 			<Subscribe />
+			<Footer />
 		</>
 	);
 };

@@ -3,8 +3,13 @@ import React from 'react';
 const Photos = (props) => {
 	return (
 		<>
-			<p>Photos</p>
-			<p> test</p>
+			<section id='photos'>
+				<h1 className='white-title'>Photos</h1>
+			</section>
+			<section>
+				<img src='' className='photo'></img>
+			</section>
+			<button>View All Photos</button>
 		</>
 	);
 };
