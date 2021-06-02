@@ -1,0 +1,85 @@
+@use '_colors';
+
+@mixin triangle(
+	$bg: colors.$black,
+	$rollBg: colors.$white,
+	$rollFont: colors.$white
+) {
+	color: $bg;
+	background-color: $bg;
+	cursor: pointer;
+	position: absolute;
+	top: 90%;
+	width: auto;
+	background-color: $bg;
+	// @include styles.hover($rollBg: $rollBg, $rollFont: $rollFont);
+	&:hover {
+		color: wheat;
+	}
+}
+* {
+	box-sizing: border-box;
+}
+.carousel {
+	// max-width: 100vw - 244px;
+	display: flex;
+	margin: auto;
+	position: relative;
+	align-items: flex-start;
+	button {
+		position: relative;
+	}
+}
+.heroInfo {
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	left: 8.47%;
+	right: 73.61%;
+	top: calc(50% - 22px / 2 + 99px);
+	width: 716px;
+}
+.heroFont {
+	// position: relative;
+	height: 150px;
+	// left: 0%;
+	// right: 0%;
+	// top: 0px;
+	margin-bottom: 36px;
+	margin-top: -20px;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 57px;
+	line-height: 50px;
+	/* or 88% */
+
+	// display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.containers {
+	margin: auto;
+	position: relative;
+	top: 0;
+	display: flex;
+	width: calc(100% - 244px);
+	// height: 619px;
+}
+.back-button,
+.forward-button {
+	@include triangle;
+}
+.heroImg {
+	img {
+		position: absolute;
+		left: 30.56%;
+		right: -73.19%;
+		top: -19.75%;
+		bottom: -22.72%;
+	}
+	// z-index: 0;
+}

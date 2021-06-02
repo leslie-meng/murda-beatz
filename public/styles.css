@@ -2,6 +2,77 @@
 @import url("http://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap");
 @import url("http://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
 @import url("http://fonts.googleapis.com/css2?family=Sedgwick Ave:wght@400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  display: flex;
+  margin: auto;
+  position: relative;
+  align-items: flex-start;
+}
+.carousel button {
+  position: relative;
+}
+
+.heroInfo {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  left: 8.47%;
+  right: 73.61%;
+  top: calc(50% - 22px / 2 + 99px);
+  width: 716px;
+}
+
+.heroFont {
+  height: 150px;
+  margin-bottom: 36px;
+  margin-top: -20px;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 57px;
+  line-height: 50px;
+  /* or 88% */
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.containers {
+  margin: auto;
+  position: relative;
+  top: 0;
+  display: flex;
+  width: calc(100% - 244px);
+}
+
+.back-button,
+.forward-button {
+  color: #000000;
+  background-color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: auto;
+  background-color: #000000;
+}
+.back-button:hover,
+.forward-button:hover {
+  color: wheat;
+}
+
+.heroImg img {
+  position: absolute;
+  left: 30.56%;
+  right: -73.19%;
+  top: -19.75%;
+  bottom: -22.72%;
+}
+
 .white-title {
   font-family: Sen, sans-serif;
   color: rgba(255, 255, 255, 0.0001);
@@ -29,9 +100,49 @@
 }
 
 .black-button {
+  height: 42px;
+  width: 220px;
   border-radius: 21px;
+  border-style: none;
+  background-color: #000000;
+  color: #f6c82a;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out 100ms;
+  font-size: 20px;
+  font-family: Sen, sans-serif;
+}
+.black-button:hover {
+  border: solid 1px #000000;
+  background-color: #f6c82a;
+  color: #000000;
 }
 
+button {
+  height: 42px;
+  width: 220px;
+  border-radius: 21px;
+  border-style: none;
+  background-color: #f6c82a;
+  color: #000000;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out 100ms;
+  font-size: 20px;
+  font-family: Sen, sans-serif;
+  position: absolute;
+  bottom: 0px;
+}
+button:hover {
+  border: solid 1px #f6c82a;
+  background-color: #000000;
+  color: #f6c82a;
+}
+
+header {
+  z-index: 2;
+  height: 134px;
+}
 header #logo {
   position: absolute;
   width: 169px;
@@ -61,9 +172,18 @@ nav a {
   color: #000000;
 }
 
+main {
+  position: relative;
+}
+
 body {
   background-color: #f6c82a;
 }
 body .test {
   font-family: Sedgwick Ave, cursive;
+  font-size: 20px;
+  letter-spacing: 3.33333px;
+}
+body .test p {
+  line-height: 0px;
 }
