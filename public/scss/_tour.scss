@@ -1,17 +1,79 @@
 #tour {
+	top: 0px;
+	padding-top: 4vh;
+	background-color: black;
 	position: relative;
 	.white-title {
+		// top: 4vh;
 		position: relative;
 		margin-left: 9vw;
 	}
 	button {
 		float: right;
-		top: 4.4vh;
+		top: 8vh;
 
 		right: 9vw;
 	}
 	height: 90vh;
 	width: 100vw;
+	align-items: center;
+	line-height: 0.9;
+}
+.itin {
+	width: 70%;
+	display: flex;
+	flex-flow: row wrap;
+	// align-items: center;
+	background-color: black;
+	margin: 5px;
+	z-index: 1;
+	position: relative;
+	justify-content: center;
+	margin: auto;
+	max-height: 18vh;
+	&::before {
+		content: '';
+		height: 2px;
+		position: absolute;
+		top: 99%;
+		left: 0;
+		right: 0;
 
-	align-content: center;
+		padding-bottom: 3px;
+		background: linear-gradient(to right, black 10%, #f6c82a 50%, black 90%);
+		// padding: 3px;
+	}
+}
+#calendar {
+	position: relative;
+	bottom: -4vh;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+.itin-details {
+	position: relative;
+	// width: 40%;
+	justify-content: start;
+	flex-basis: 1;
+	p {
+		margin: 5px;
+	}
+}
+.tour-actions {
+	position: relative;
+	flex-basis: 1.5;
+
+	ul {
+		display: flex;
+		flex-flow: row nowrap;
+		margin: 0;
+		padding: 0;
+		li {
+			padding: 10px;
+		}
+		a:hover {
+			color: white;
+		}
+	}
 }

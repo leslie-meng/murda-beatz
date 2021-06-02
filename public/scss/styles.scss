@@ -5,28 +5,21 @@
 @use '_footer';
 @use '_socials';
 @use '_tour';
-
+@use '_videos';
+@use '_store';
 @mixin title($title: White) {
 	align-self: center;
 	font-family: fonts.$main-font;
 	color: rgba(255, 255, 255, 0.0001);
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: $title;
-	height: 10vh;
-	font-size: 36px;
+	// height: 10vh;
+
 	font-style: normal;
 	font-weight: 800;
 	letter-spacing: 14px;
 }
-@media screen only and (min-width: 500px) {
-	.black-title,
-	.white-title {
-		font-size: 9vh;
-	}
-	.heroFont {
-		font-size: min(57px, 7vh);
-	}
-}
+
 @mixin hover($rollBg: colors.$mbYellow, $rollFont: colors.$black) {
 	&:hover {
 		border: solid 1px $rollFont;
@@ -41,7 +34,7 @@
 	$rollFont: colors.$mbYellow
 ) {
 	height: 42px;
-	width: 220px;
+
 	// position: absolute;
 	border-radius: 21px;
 	border-style: none;
@@ -53,11 +46,12 @@
 
 	transition: all 0.5s ease-out 100ms;
 	@include hover($rollBg: $rollBg, $rollFont: $rollFont);
-	font-size: 20px;
+
 	font-family: fonts.$main-font;
 }
 .white-title {
 	@include title;
+	font-size: 28px;
 }
 
 .black-title {
@@ -70,6 +64,7 @@
 		$rollBg: colors.$mbYellow,
 		$rollFont: colors.$black
 	);
+	font-size: 28px;
 }
 * {
 	box-sizing: border-box;
@@ -80,6 +75,8 @@ button {
 	@include button;
 	position: relative;
 	bottom: 0px;
+	width: 220px;
+	font-size: 20px;
 }
 
 header {
@@ -124,18 +121,20 @@ main {
 #app {
 	z-index: 2;
 }
+html {
+	margin: 0;
+}
 body {
 	// position: relative;
 	// height: 100%;
 	// width: 100%;
-
+	margin: 0;
 	.test {
 		font-family: fonts.$font-highlight;
 		font-size: 20px;
-		p {
-			line-height: 0px;
-		}
+		line-height: 1;
 		letter-spacing: 3.33333px;
+		line-break: auto;
 	}
 	z-index: -2;
 	height: 100%;
@@ -165,6 +164,50 @@ footer {
 		color: colors.$mbYellow;
 		&:hover {
 			color: colors.$white;
+		}
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.black-title,
+	.white-title {
+		font-size: min(9vh, 70px);
+	}
+	.heroFont {
+		font-size: min(57px, 7vh);
+	}
+	.containers {
+		flex-flow: row wrap;
+	}
+	.heroInfo {
+		max-width: 50%;
+		bottom: 0px;
+	}
+	.heroImg {
+		height: 100%;
+		max-width: 50%;
+	}
+	.carousel {
+		top: 48px;
+	}
+	button {
+		width: 220px;
+		font-size: 20px;
+	}
+	#calendar {
+		flex-flow: row wrap;
+	}
+	.itin {
+		width: 40%;
+	}
+	.youtube-big {
+		width: 56vw;
+		position: relative;
+	}
+	.store {
+		section {
+			width: 24vw;
+			height: 24vw;
 		}
 	}
 }

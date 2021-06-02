@@ -1144,6 +1144,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/public\/scss\/_store.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/scss\/_store.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/public\/scss\/_tour.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1153,6 +1167,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/public\/scss\/_tour.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/public\/scss\/_videos.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/scss\/_videos.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

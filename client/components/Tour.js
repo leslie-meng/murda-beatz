@@ -15,7 +15,7 @@ const Tour = (props) => {
 			<section id='calendar'>
 				<section className='itin'>
 					<section className='itin-details'>
-						<p className='test'>Jun 6</p>
+						<p className='date'>Jun 6</p>
 						<p className='venue'>Jewel Nightclub</p>
 						<p className='city'>Las Vegas, NV</p>
 					</section>
@@ -33,11 +33,10 @@ const Tour = (props) => {
 						</ul>
 					</section>
 				</section>
-			</section>
-			<section id='calendar'>
+
 				<section className='itin'>
 					<section className='itin-details'>
-						<p className='test'>Jun 6</p>
+						<p className='date'>Jun 6</p>
 						<p className='venue'>Jewel Nightclub</p>
 						<p className='city'>Las Vegas, NV</p>
 					</section>
@@ -55,11 +54,10 @@ const Tour = (props) => {
 						</ul>
 					</section>
 				</section>
-			</section>
-			<section id='calendar'>
+
 				<section className='itin'>
 					<section className='itin-details'>
-						<p className='test'>Jun 6</p>
+						<p className='date'>Jun 6</p>
 						<p className='venue'>Jewel Nightclub</p>
 						<p className='city'>Las Vegas, NV</p>
 					</section>
@@ -77,11 +75,10 @@ const Tour = (props) => {
 						</ul>
 					</section>
 				</section>
-			</section>
-			<section id='calendar'>
+
 				<section className='itin'>
 					<section className='itin-details'>
-						<p className='test'>Aug 7</p>
+						<p className='date'>Aug 7</p>
 						<p className='venue'>Jewel Nightclub</p>
 						<p className='city'>Las Vegas, NV</p>
 					</section>
@@ -99,11 +96,10 @@ const Tour = (props) => {
 						</ul>
 					</section>
 				</section>
-			</section>
-			<section id='calendar'>
+
 				<section className='itin'>
 					<section className='itin-details'>
-						<p className='test'>Jun 6</p>
+						<p className='date'>Jun 6</p>
 						<p className='venue'>Jewel Nightclub</p>
 						<p className='city'>Las Vegas, NV</p>
 					</section>
@@ -121,33 +117,10 @@ const Tour = (props) => {
 						</ul>
 					</section>
 				</section>
-			</section>
-			<section id='calendar'>
+
 				<section className='itin'>
 					<section className='itin-details'>
-						<p className='test'>Jul 21</p>
-						<p className='venue'>Jewel Nightclub</p>
-						<p className='city'>Las Vegas, NV</p>
-					</section>
-					<section className='tour-actions'>
-						<ul>
-							<a href=''>
-								<li>Tickets</li>
-							</a>
-							<a href=''>
-								<li>VIP</li>
-							</a>
-							<a href=''>
-								<li>RSVP</li>
-							</a>
-						</ul>
-					</section>
-				</section>
-			</section>
-			<section id='calendar'>
-				<section className='itin'>
-					<section className='itin-details'>
-						<p className='test'>Jul 31</p>
+						<p className='date'>Jul 21</p>
 						<p className='venue'>Jewel Nightclub</p>
 						<p className='city'>Las Vegas, NV</p>
 					</section>

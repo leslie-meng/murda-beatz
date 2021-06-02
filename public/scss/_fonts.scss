@@ -12,16 +12,66 @@ $main-font: Sen, sans-serif;
 	font-family: $main-font;
 	color: white;
 	font-weight: 800;
-	font-size: min(11vh, 24px);
+	font-size: 16px;
+	line-height: 0.8;
 }
 .rollArtist {
 	font-family: $main-font;
 	color: white;
-	font-size: min(7.5vh, 16px);
+	font-size: 12px;
+	line-height: 0.8;
 }
 .dl {
 	font-weight: 800;
 	font-family: $main-font;
 	color: #f6c82a;
-	font-size: min(10vh, 20px);
+	font-size: 14px;
+	line-height: 0.8;
+}
+.date,
+.vid-artist {
+	color: white;
+	font-family: $font-highlight;
+	font-size: min(2.5vh, 14px, 2.5vw);
+}
+.venue {
+	color: white;
+	font-family: $main-font;
+	font-size: min(4.5vh, 28px, 4.5vw);
+	font-weight: 800;
+}
+.video-title {
+	font-family: $main-font;
+	color: white;
+	font-weight: 800;
+	font-size: min(7vh, 7vw, 30px);
+	line-height: 0.8;
+}
+.city {
+	color: white;
+	font-size: min(3vh, 16px, 3vw);
+	font-family: $main-font;
+}
+.tour-actions {
+	font-size: min(2vh, 12px, 2vw);
+	font-weight: 800;
+	color: #f6c82a;
+	display: flex;
+	align-items: center;
+	a {
+		color: #f6c82a;
+		text-decoration-line: none;
+		list-style-type: none;
+	}
+}
+@media screen and (min-width: 500px) and (min-height: 500px) {
+	.rollTitle {
+		font-size: min(11vh, 24px);
+	}
+	.rollArtist {
+		font-size: min(7.5vh, 16px);
+	}
+	.dl {
+		font-size: min(10vh, 20px);
+	}
 }

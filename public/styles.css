@@ -6,22 +6,79 @@
   font-family: Sen, sans-serif;
   color: white;
   font-weight: 800;
-  font-size: min(11vh, 24px);
+  font-size: 16px;
+  line-height: 0.8;
 }
 
 .rollArtist {
   font-family: Sen, sans-serif;
   color: white;
-  font-size: min(7.5vh, 16px);
+  font-size: 12px;
+  line-height: 0.8;
 }
 
 .dl {
   font-weight: 800;
   font-family: Sen, sans-serif;
   color: #f6c82a;
-  font-size: min(10vh, 20px);
+  font-size: 14px;
+  line-height: 0.8;
 }
 
+.date,
+.vid-artist {
+  color: white;
+  font-family: Sedgwick Ave, cursive;
+  font-size: min(2.5vh, 14px, 2.5vw);
+}
+
+.venue {
+  color: white;
+  font-family: Sen, sans-serif;
+  font-size: min(4.5vh, 28px, 4.5vw);
+  font-weight: 800;
+}
+
+.video-title {
+  font-family: Sen, sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: min(7vh, 7vw, 30px);
+  line-height: 0.8;
+}
+
+.city {
+  color: white;
+  font-size: min(3vh, 16px, 3vw);
+  font-family: Sen, sans-serif;
+}
+
+.tour-actions {
+  font-size: min(2vh, 12px, 2vw);
+  font-weight: 800;
+  color: #f6c82a;
+  display: flex;
+  align-items: center;
+}
+.tour-actions a {
+  color: #f6c82a;
+  text-decoration-line: none;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 500px) and (min-height: 500px) {
+  .rollTitle {
+    font-size: min(11vh, 24px);
+  }
+
+  .rollArtist {
+    font-size: min(7.5vh, 16px);
+  }
+
+  .dl {
+    font-size: min(10vh, 20px);
+  }
+}
 #hero {
   background-color: #f6c82a;
   height: 100vh;
@@ -29,11 +86,12 @@
 
 .carousel {
   position: relative;
-  top: 48px;
+  top: 36px;
   height: calc(100vh - 182px);
 }
 .carousel button {
   position: relative;
+  bottom: 0;
 }
 
 .heroInfo {
@@ -41,16 +99,17 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: center;
+  align-self: center;
+  justify-content: center;
   top: 0;
   bottom: 36px;
   width: 50%;
+  justify-content: end;
 }
 
 .heroFont {
   position: relative;
-  min-height: 150px;
-  bottom: 36px;
+  margin-top: -20px;
   font-family: Sen;
   font-style: normal;
   font-weight: 800;
@@ -62,6 +121,8 @@
 }
 
 .containers {
+  display: flex;
+  flex-flow: column-reverse wrap;
   margin: auto;
   position: relative;
   width: 83%;
@@ -86,9 +147,10 @@
 .heroImg {
   float: right;
   position: relative;
-  left: min(10%, 0);
+  left: min(10%, 0px);
   top: max(-15%, -8vh);
-  height: 100%;
+  align-self: center;
+  max-height: 70vh;
 }
 .heroImg img {
   max-height: 100%;
@@ -97,14 +159,13 @@
 
 #releases {
   position: relative;
-  top: 0;
-  height: 100vh;
+  height: fit-content;
+  padding: 2vh 0;
   width: 100vw;
   align-content: center;
 }
 #releases .white-title {
   position: relative;
-  top: 7vh;
   margin-left: 9vw;
 }
 #releases button {
@@ -114,17 +175,18 @@
 }
 #releases::before {
   position: absolute;
-  top: 0;
+  top: -3vh;
   left: 0;
   width: 62%;
-  height: 100%;
+  bottom: 0;
   background-color: rgba(255, 255, 255, 0.09);
   content: "";
+  height: inherit;
 }
 
 #albums {
-  padding-top: 5vh;
-  margin: auto;
+  margin: 5vh auto 0;
+  position: relative;
   width: max(70vw, 300px);
   display: flex;
   flex-flow: row wrap;
@@ -197,6 +259,7 @@
   right: 51px;
   height: max(33vh, 200px);
   top: 33vh;
+  align-self: center;
   display: flex;
 }
 #socials ul {
@@ -210,10 +273,14 @@
 }
 
 #tour {
+  top: 0px;
+  padding-top: 4vh;
+  background-color: black;
   position: relative;
   height: 90vh;
   width: 100vw;
-  align-content: center;
+  align-items: center;
+  line-height: 0.9;
 }
 #tour .white-title {
   position: relative;
@@ -221,31 +288,170 @@
 }
 #tour button {
   float: right;
-  top: 4.4vh;
+  top: 8vh;
   right: 9vw;
 }
 
-@media screen only and (min-width: 500px) {
-  .black-title,
-.white-title {
-    font-size: 9vh;
-  }
-
-  .heroFont {
-    font-size: min(57px, 7vh);
-  }
+.itin {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+  margin: 5px;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  max-height: 18vh;
 }
+.itin::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  padding-bottom: 3px;
+  background: linear-gradient(to right, black 10%, #f6c82a 50%, black 90%);
+}
+
+#calendar {
+  position: relative;
+  bottom: -4vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.itin-details {
+  position: relative;
+  justify-content: start;
+  flex-basis: 1;
+}
+.itin-details p {
+  margin: 5px;
+}
+
+.tour-actions {
+  position: relative;
+  flex-basis: 1.5;
+}
+.tour-actions ul {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+}
+.tour-actions ul li {
+  padding: 10px;
+}
+.tour-actions ul a:hover {
+  color: white;
+}
+
+#videos {
+  position: relative;
+}
+#videos .white-title {
+  margin-left: 9vw;
+  position: relative;
+}
+
+.video-slider {
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+}
+
+.youtube-big {
+  width: 75vw;
+  height: min(50vh, 45vw);
+  position: relative;
+}
+
+.video-slide {
+  position: relative;
+}
+
+.overlay-content {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#under-video {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 5vh auto;
+}
+
+#video-caption {
+  padding: 0;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 60%;
+}
+
+.video-title {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 3vw;
+  width: 8vw;
+}
+
+#store {
+  background-color: #f6c82a;
+  height: fit-content;
+  width: 100vw;
+  padding: 2vh 0;
+  position: relative;
+}
+#store .black-title {
+  position: relative;
+  margin-left: 9vw;
+  top: 30px;
+}
+
+.store {
+  display: flex;
+  flex-flow: row wrap;
+}
+.store section {
+  width: 300px;
+  height: 300px;
+}
+.store section img {
+  width: 100%;
+  height: 100%;
+}
+
 .white-title {
   align-self: center;
   font-family: Sen, sans-serif;
   color: rgba(255, 255, 255, 0.0001);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: White;
-  height: 10vh;
-  font-size: 36px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 14px;
+  font-size: 28px;
 }
 
 .black-title {
@@ -254,8 +460,6 @@
   color: rgba(255, 255, 255, 0.0001);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
-  height: 10vh;
-  font-size: 36px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 14px;
@@ -263,15 +467,14 @@
 
 .black-button {
   height: 42px;
-  width: 220px;
   border-radius: 21px;
   border-style: none;
   background-color: #000000;
   color: #f6c82a;
   justify-content: center;
   transition: all 0.5s ease-out 100ms;
-  font-size: 20px;
   font-family: Sen, sans-serif;
+  font-size: 28px;
 }
 .black-button:hover {
   border: solid 1px #000000;
@@ -287,17 +490,17 @@
 
 button {
   height: 42px;
-  width: 220px;
   border-radius: 21px;
   border-style: none;
   background-color: #f6c82a;
   color: #000000;
   justify-content: center;
   transition: all 0.5s ease-out 100ms;
-  font-size: 20px;
   font-family: Sen, sans-serif;
   position: relative;
   bottom: 0px;
+  width: 220px;
+  font-size: 20px;
 }
 button:hover {
   border: solid 1px #f6c82a;
@@ -347,7 +550,12 @@ main {
   z-index: 2;
 }
 
+html {
+  margin: 0;
+}
+
 body {
+  margin: 0;
   z-index: -2;
   height: 100%;
   width: 100%;
@@ -357,10 +565,9 @@ body {
 body .test {
   font-family: Sedgwick Ave, cursive;
   font-size: 20px;
+  line-height: 1;
   letter-spacing: 3.33333px;
-}
-body .test p {
-  line-height: 0px;
+  line-break: auto;
 }
 body::before {
   z-index: -1;
@@ -392,4 +599,56 @@ footer a {
 }
 footer a:hover {
   color: #ffffff;
+}
+
+@media only screen and (min-width: 500px) {
+  .black-title,
+.white-title {
+    font-size: min(9vh, 70px);
+  }
+
+  .heroFont {
+    font-size: min(57px, 7vh);
+  }
+
+  .containers {
+    flex-flow: row wrap;
+  }
+
+  .heroInfo {
+    max-width: 50%;
+    bottom: 0px;
+  }
+
+  .heroImg {
+    height: 100%;
+    max-width: 50%;
+  }
+
+  .carousel {
+    top: 48px;
+  }
+
+  button {
+    width: 220px;
+    font-size: 20px;
+  }
+
+  #calendar {
+    flex-flow: row wrap;
+  }
+
+  .itin {
+    width: 40%;
+  }
+
+  .youtube-big {
+    width: 56vw;
+    position: relative;
+  }
+
+  .store section {
+    width: 24vw;
+    height: 24vw;
+  }
 }
