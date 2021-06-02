@@ -9,10 +9,9 @@ const tourDates = [
 ];
 const Tour = (props) => {
 	return (
-		<>
-			<section id='Tour'>
-				<h1 className='white-title'>Tour</h1>
-			</section>
+		<section id='tour'>
+			<h1 className='white-title'>Tour</h1>
+
 			<section id='calendar'>
 				<section className='itin'>
 					<section className='itin-details'>
@@ -168,7 +167,7 @@ const Tour = (props) => {
 				</section>
 			</section>
 			<button>View All Dates</button>
-		</>
+		</section>
 	);
 };
 export default Tour;

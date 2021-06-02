@@ -1,0 +1,18 @@
+#socials {
+	z-index: 2;
+	position: absolute;
+	right: 51px;
+	height: max(33vh, 200px);
+	top: 33vh;
+	display: flex;
+
+	ul {
+		height: 100%;
+		flex-flow: column wrap;
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}

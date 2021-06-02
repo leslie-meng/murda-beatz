@@ -2,20 +2,31 @@
 @use '_fonts';
 @use '_hero';
 @use '_releases';
+@use '_footer';
+@use '_socials';
+@use '_tour';
 
 @mixin title($title: White) {
+	align-self: center;
 	font-family: fonts.$main-font;
 	color: rgba(255, 255, 255, 0.0001);
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: $title;
-	height: 84px;
-	font-size: 35px;
+	height: 10vh;
+	font-size: 36px;
 	font-style: normal;
 	font-weight: 800;
 	letter-spacing: 14px;
-	text-transform: uppercase;
 }
-
+@media screen only and (min-width: 500px) {
+	.black-title,
+	.white-title {
+		font-size: 9vh;
+	}
+	.heroFont {
+		font-size: min(57px, 7vh);
+	}
+}
 @mixin hover($rollBg: colors.$mbYellow, $rollFont: colors.$black) {
 	&:hover {
 		border: solid 1px $rollFont;
@@ -39,7 +50,7 @@
 	// display: flex;
 	// align-items: center;
 	justify-content: center;
-	text-transform: uppercase;
+
 	transition: all 0.5s ease-out 100ms;
 	@include hover($rollBg: $rollBg, $rollFont: $rollFont);
 	font-size: 20px;
@@ -63,6 +74,7 @@
 * {
 	box-sizing: border-box;
 	text-transform: uppercase;
+	font-family: fonts.$main-font;
 }
 button {
 	@include button;
@@ -72,32 +84,37 @@ button {
 
 header {
 	z-index: 2;
-	#logo {
-		position: absolute;
-		width: 169px;
-		height: 134px;
-		left: 50px;
-		top: 24px;
-	}
+
 	height: 134px;
 }
+#logo {
+	z-index: 3;
+	position: absolute;
+
+	width: calc(min(30vw, 169px));
+
+	height: calc(min(23.8vw, 134px));
+	left: 4vh;
+	top: 24px;
+}
 nav {
+	z-index: 3;
 	display: flex;
+	flex-flow: row wrap;
 	align-items: center;
 	text-align: right;
-	text-transform: uppercase;
+
 	position: absolute;
-	width: 584px;
+	width: 40%;
 	height: 22px;
-	left: 806px;
 	top: 47px;
+	right: 50px;
 	justify-content: space-around;
 	a {
-		text-transform: uppercase;
 		font-family: fonts.$main-font;
 		font-weight: 800;
-		font-size: 18px;
-		line-height: 80px;
+		font-size: calc(Math.min(Math.max(8vw, 8px), 18px));
+		// line-height: 80px;
 		color: colors.$black;
 	}
 }
@@ -120,12 +137,13 @@ body {
 		}
 		letter-spacing: 3.33333px;
 	}
+	z-index: -2;
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	background-color: colors.$mbGrey;
 	&::before {
-		z-index: 1;
+		z-index: -1;
 		position: absolute;
 		background-image: url('/images/Mask.png');
 		opacity: 0.4;
@@ -137,5 +155,16 @@ body {
 		left: 0px;
 	}
 }
-#background {
+
+footer {
+	background-color: colors.$black;
+	@include footer.footer();
+	color: colors.$mbYellow;
+
+	a {
+		color: colors.$mbYellow;
+		&:hover {
+			color: colors.$white;
+		}
+	}
 }

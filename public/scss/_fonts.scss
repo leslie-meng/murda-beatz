@@ -8,3 +8,20 @@
 @include google-font('Sedgwick Ave', 400);
 $font-highlight: Sedgwick Ave, cursive;
 $main-font: Sen, sans-serif;
+.rollTitle {
+	font-family: $main-font;
+	color: white;
+	font-weight: 800;
+	font-size: min(11vh, 24px);
+}
+.rollArtist {
+	font-family: $main-font;
+	color: white;
+	font-size: min(7.5vh, 16px);
+}
+.dl {
+	font-weight: 800;
+	font-family: $main-font;
+	color: #f6c82a;
+	font-size: min(10vh, 20px);
+}

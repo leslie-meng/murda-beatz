@@ -7,10 +7,12 @@ import Store from './Store';
 import Subscribe from './Subscribe';
 import Videos from './Videos';
 import Footer from './Footer';
+import Socials from './Socials';
 const App = () => {
 	return (
 		<>
 			<Hero />
+			<Socials />
 			<Releases />
 			<Tour />
 			<Videos />

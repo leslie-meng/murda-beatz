@@ -1,8 +1,93 @@
+#releases {
+	position: relative;
+	top: 0;
+	.white-title {
+		position: relative;
+		top: 7vh;
+		margin-left: 9vw;
+	}
+	button {
+		float: right;
+		top: 4.4vh;
+
+		right: 9vw;
+	}
+	height: 100vh;
+	width: 100vw;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 62%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.09);
+		content: '';
+	}
+	align-content: center;
+}
+#albums {
+	// height: 70vh;
+	padding-top: 5vh;
+	margin: auto;
+	// max-height: 70vh;
+	width: max(70vw, 300px);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.album-column {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	width: 50%;
+	min-width: 200px;
+	flex-basis: 1;
+}
+.smAlbums {
+	display: flex;
+	flex-flow: row wrap;
+	width: 50%;
+}
 .main-release {
-	height: 502px;
-	width: 503px;
+	position: relative;
+	// height: 100%;
+	width: 100%;
+	padding: 5px;
 }
 .small-album {
-	height: 247px;
-	width: 246px;
+	position: relative;
+	width: 100%;
+	padding: 5px;
+}
+
+.main-overlay {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	line-height: min(10vh, 20px);
+	background-color: #121212;
+	position: absolute;
+	z-index: 3;
+}
+.overlay {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: -0.5;
+	width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	line-height: min(5vh, 10px);
+	background-color: #121212;
+	position: absolute;
+	z-index: 3;
 }

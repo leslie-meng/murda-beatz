@@ -2,11 +2,35 @@
 @import url("http://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap");
 @import url("http://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
 @import url("http://fonts.googleapis.com/css2?family=Sedgwick Ave:wght@400&display=swap");
+.rollTitle {
+  font-family: Sen, sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: min(11vh, 24px);
+}
+
+.rollArtist {
+  font-family: Sen, sans-serif;
+  color: white;
+  font-size: min(7.5vh, 16px);
+}
+
+.dl {
+  font-weight: 800;
+  font-family: Sen, sans-serif;
+  color: #f6c82a;
+  font-size: min(10vh, 20px);
+}
+
+#hero {
+  background-color: #f6c82a;
+  height: 100vh;
+}
+
 .carousel {
-  display: flex;
-  margin: auto;
   position: relative;
-  align-items: flex-start;
+  top: 48px;
+  height: calc(100vh - 182px);
 }
 .carousel button {
   position: relative;
@@ -16,34 +40,32 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  align-items: flex-start;
-  left: 8.47%;
-  right: 73.61%;
-  top: calc(50% - 22px / 2 + 99px);
-  width: 716px;
+  position: relative;
+  align-items: center;
+  top: 0;
+  bottom: 36px;
+  width: 50%;
 }
 
 .heroFont {
-  height: 150px;
-  margin-bottom: 36px;
-  margin-top: -20px;
+  position: relative;
+  min-height: 150px;
+  bottom: 36px;
   font-family: Sen;
   font-style: normal;
   font-weight: 800;
-  font-size: 57px;
-  line-height: 50px;
+  font-size: 36px;
+  line-height: 0.8;
   /* or 88% */
+  line-break: auto;
   align-items: center;
-  text-transform: uppercase;
 }
 
 .containers {
   margin: auto;
   position: relative;
-  top: 0;
-  display: flex;
-  width: calc(100% - 244px);
+  width: 83%;
+  height: 100%;
 }
 
 .back-button,
@@ -61,48 +83,182 @@
   color: wheat;
 }
 
+.heroImg {
+  float: right;
+  position: relative;
+  left: min(10%, 0);
+  top: max(-15%, -8vh);
+  height: 100%;
+}
 .heroImg img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#releases {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+}
+#releases .white-title {
+  position: relative;
+  top: 7vh;
+  margin-left: 9vw;
+}
+#releases button {
+  float: right;
+  top: 4.4vh;
+  right: 9vw;
+}
+#releases::before {
   position: absolute;
-  left: 30.56%;
-  right: -73.19%;
-  top: -19.75%;
-  bottom: -22.72%;
+  top: 0;
+  left: 0;
+  width: 62%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.09);
+  content: "";
+}
+
+#albums {
+  padding-top: 5vh;
+  margin: auto;
+  width: max(70vw, 300px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.album-column {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  min-width: 200px;
+  flex-basis: 1;
+}
+
+.smAlbums {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
 }
 
 .main-release {
-  height: 502px;
-  width: 503px;
+  position: relative;
+  width: 100%;
+  padding: 5px;
 }
 
 .small-album {
-  height: 247px;
-  width: 246px;
+  position: relative;
+  width: 100%;
+  padding: 5px;
 }
 
+.main-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: min(10vh, 20px);
+  background-color: #121212;
+  position: absolute;
+  z-index: 3;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -0.5;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: min(5vh, 10px);
+  background-color: #121212;
+  position: absolute;
+  z-index: 3;
+}
+
+#socials {
+  z-index: 2;
+  position: absolute;
+  right: 51px;
+  height: max(33vh, 200px);
+  top: 33vh;
+  display: flex;
+}
+#socials ul {
+  height: 100%;
+  flex-flow: column wrap;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tour {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  align-content: center;
+}
+#tour .white-title {
+  position: relative;
+  margin-left: 9vw;
+}
+#tour button {
+  float: right;
+  top: 4.4vh;
+  right: 9vw;
+}
+
+@media screen only and (min-width: 500px) {
+  .black-title,
 .white-title {
+    font-size: 9vh;
+  }
+
+  .heroFont {
+    font-size: min(57px, 7vh);
+  }
+}
+.white-title {
+  align-self: center;
   font-family: Sen, sans-serif;
   color: rgba(255, 255, 255, 0.0001);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: White;
-  height: 84px;
-  font-size: 35px;
+  height: 10vh;
+  font-size: 36px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 14px;
-  text-transform: uppercase;
 }
 
 .black-title {
+  align-self: center;
   font-family: Sen, sans-serif;
   color: rgba(255, 255, 255, 0.0001);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
-  height: 84px;
-  font-size: 35px;
+  height: 10vh;
+  font-size: 36px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 14px;
-  text-transform: uppercase;
 }
 
 .black-button {
@@ -113,7 +269,6 @@
   background-color: #000000;
   color: #f6c82a;
   justify-content: center;
-  text-transform: uppercase;
   transition: all 0.5s ease-out 100ms;
   font-size: 20px;
   font-family: Sen, sans-serif;
@@ -127,6 +282,7 @@
 * {
   box-sizing: border-box;
   text-transform: uppercase;
+  font-family: Sen, sans-serif;
 }
 
 button {
@@ -137,7 +293,6 @@ button {
   background-color: #f6c82a;
   color: #000000;
   justify-content: center;
-  text-transform: uppercase;
   transition: all 0.5s ease-out 100ms;
   font-size: 20px;
   font-family: Sen, sans-serif;
@@ -154,32 +309,33 @@ header {
   z-index: 2;
   height: 134px;
 }
-header #logo {
+
+#logo {
+  z-index: 3;
   position: absolute;
-  width: 169px;
-  height: 134px;
-  left: 50px;
+  width: calc(min(30vw, 169px));
+  height: calc(min(23.8vw, 134px));
+  left: 4vh;
   top: 24px;
 }
 
 nav {
+  z-index: 3;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   text-align: right;
-  text-transform: uppercase;
   position: absolute;
-  width: 584px;
+  width: 40%;
   height: 22px;
-  left: 806px;
   top: 47px;
+  right: 50px;
   justify-content: space-around;
 }
 nav a {
-  text-transform: uppercase;
   font-family: Sen, sans-serif;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 80px;
+  font-size: calc(Math.min(Math.max(8vw, 8px), 18px));
   color: #000000;
 }
 
@@ -192,9 +348,10 @@ main {
 }
 
 body {
+  z-index: -2;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: #121212;
 }
 body .test {
@@ -206,7 +363,7 @@ body .test p {
   line-height: 0px;
 }
 body::before {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   background-image: url("/images/Mask.png");
   opacity: 0.4;
@@ -216,4 +373,23 @@ body::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+footer {
+  background-color: #000000;
+  color: #f6c82a;
+}
+footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: #f6c82a;
+}
+footer a:hover {
+  color: #ffffff;
 }

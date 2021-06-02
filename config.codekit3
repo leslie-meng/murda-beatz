@@ -145,6 +145,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/client\/components\/Socials.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/client\/components\/Socials-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/client\/components\/Store.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -742,19 +753,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/photo-section\/photo11.png" : {
-      "ft" : 32768,
-      "iS" : 139269,
-      "oA" : 0,
-      "oAP" : "\/public\/images\/photo-section\/photo11.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/public\/images\/socials\/ico-apple.png" : {
       "ft" : 32768,
       "iS" : 309,
@@ -773,6 +771,19 @@
       "iS" : 511,
       "oA" : 0,
       "oAP" : "\/public\/images\/socials\/ico-apple@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/images\/socials\/ico-applewhite.png" : {
+      "ft" : 32768,
+      "iS" : 549,
+      "oA" : 0,
+      "oAP" : "\/public\/images\/socials\/ico-applewhite.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -807,6 +818,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/public\/images\/socials\/ico-fbwhite.png" : {
+      "ft" : 32768,
+      "iS" : 422,
+      "oA" : 0,
+      "oAP" : "\/public\/images\/socials\/ico-fbwhite.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/public\/images\/socials\/ico-ig.png" : {
       "ft" : 32768,
       "iS" : 437,
@@ -825,6 +849,19 @@
       "iS" : 826,
       "oA" : 0,
       "oAP" : "\/public\/images\/socials\/ico-ig@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/images\/socials\/ico-igwhite.png" : {
+      "ft" : 32768,
+      "iS" : 770,
+      "oA" : 0,
+      "oAP" : "\/public\/images\/socials\/ico-igwhite.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -859,6 +896,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/public\/images\/socials\/ico-mailwhite.png" : {
+      "ft" : 32768,
+      "iS" : 434,
+      "oA" : 0,
+      "oAP" : "\/public\/images\/socials\/ico-mailwhite.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/public\/images\/socials\/ico-spotify.png" : {
       "ft" : 32768,
       "iS" : 422,
@@ -885,6 +935,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/public\/images\/socials\/ico-spotifywhite.png" : {
+      "ft" : 32768,
+      "iS" : 745,
+      "oA" : 0,
+      "oAP" : "\/public\/images\/socials\/ico-spotifywhite.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/public\/images\/socials\/ico-twitter.png" : {
       "ft" : 32768,
       "iS" : 377,
@@ -903,6 +966,19 @@
       "iS" : 654,
       "oA" : 0,
       "oAP" : "\/public\/images\/socials\/ico-twitter@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/images\/socials\/ico-twitterwhite.png" : {
+      "ft" : 32768,
+      "iS" : 647,
+      "oA" : 0,
+      "oAP" : "\/public\/images\/socials\/ico-twitterwhite.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1012,6 +1088,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/public\/scss\/_footer.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/scss\/_footer.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/public\/scss\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1035,6 +1125,34 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/public\/scss\/_releases.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/public\/scss\/_socials.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/scss\/_socials.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/public\/scss\/_tour.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/scss\/_tour.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
