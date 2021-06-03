@@ -33,7 +33,7 @@ const Subscribe = (props) => {
 							id='murda-beatz'
 							name='emails-from'
 							value='murda-beatz'
-							checked
+							defaultChecked
 							style={{ display: 'inline-block' }}
 						/>
 						Murda Beatz
@@ -47,7 +47,7 @@ const Subscribe = (props) => {
 							id='interscope-records'
 							name='emails-from'
 							value='interscope-records'
-							checked
+							defaultChecked
 							style={{ display: 'inline-block' }}
 						/>
 						Interscope Records
@@ -61,7 +61,7 @@ const Subscribe = (props) => {
 							id='universal-music'
 							name='emails-from'
 							value='universal-music'
-							checked
+							defaultChecked
 							style={{ display: 'inline-block' }}
 						/>
 						Universal Music
