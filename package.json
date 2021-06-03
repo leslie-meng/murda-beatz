@@ -9,7 +9,7 @@
     "build": "webpack",
     "build-watch": "webpack -w",
     "start-dev": "npm run build-watch & npm run start",
-    "heroku-postbuild": "webpack -p",
+    "heroku-postbuild": "webpack -p"
   },
   "author": "lesliemeng",
   "license": "ISC",
