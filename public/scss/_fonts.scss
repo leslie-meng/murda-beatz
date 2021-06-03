@@ -1,5 +1,5 @@
 @mixin google-font($family, $weight) {
-	@import url('http://fonts.googleapis.com/css2?family=#{$family}:wght@#{$weight}&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=#{$family}:wght@#{$weight}&display=swap');
 }
 
 @include google-font('Sen', 400);
