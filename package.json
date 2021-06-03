@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Code challenge for Halo Media.",
   "main": "index.js",
-  "scripts": {
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"  
+    },
+    "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "build": "webpack",
     "build-watch": "webpack -w",
     "start-dev": "npm run build-watch & npm run start",
-    "heroku-token": "script/encrypt-heroku-auth-token.js",
-    "heroku-postbuild": "webpack -p"
+    "heroku-token": "script/encrypt-heroku-auth-token.js"
   },
   "author": "lesliemeng",
   "license": "ISC",
