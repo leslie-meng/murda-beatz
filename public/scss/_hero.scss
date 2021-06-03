@@ -23,8 +23,7 @@
 }
 
 .carousel {
-	// max-width: 100vw - 244px;
-
+	overflow: hidden;
 	position: relative;
 	top: 36px;
 	button {
