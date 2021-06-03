@@ -9,6 +9,8 @@
     "build": "webpack",
     "build-watch": "webpack -w",
     "start-dev": "npm run build-watch & npm run start",
+
+    "heroku-token": "script/encrypt-heroku-auth-token.js",
     "heroku-postbuild": "webpack -p"
   },
   "author": "lesliemeng",
