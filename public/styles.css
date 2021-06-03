@@ -296,7 +296,7 @@ legend {
   padding: 4vh 0;
   background-color: black;
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   align-items: center;
   line-height: 0.9;
@@ -835,6 +835,10 @@ footer a:hover {
   }
   #drops div {
     border: none;
+  }
+
+  #calendar {
+    height: 50%;
   }
 }
 @media only screen and (min-height: 500px) {
