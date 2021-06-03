@@ -8,7 +8,8 @@
     "start": "node server/index.js",
     "build": "webpack",
     "build-watch": "webpack -w",
-    "start-dev": "npm run build-watch & npm run start"
+    "start-dev": "npm run build-watch & npm run start",
+    "heroku-postbuild": "webpack -p",
   },
   "author": "lesliemeng",
   "license": "ISC",

@@ -7,6 +7,8 @@
 @use '_tour';
 @use '_videos';
 @use '_store';
+@use '_photos';
+@use '_subscribe';
 @mixin title($title: White) {
 	align-self: center;
 	font-family: fonts.$main-font;
@@ -78,7 +80,15 @@ button {
 	width: 220px;
 	font-size: 20px;
 }
-
+[type='submit'] {
+	margin: auto;
+	@include button;
+	position: relative;
+	bottom: 0px;
+	width: 220px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
 header {
 	z-index: 2;
 
@@ -113,6 +123,14 @@ nav {
 		font-size: calc(Math.min(Math.max(8vw, 8px), 18px));
 		// line-height: 80px;
 		color: colors.$black;
+		text-decoration: none;
+
+		&:hover {
+			color: colors.$mbYellow;
+			font-size: calc(Math.min(Math.max(8.2vw, 14px), 20px));
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: black;
+		}
 	}
 }
 main {
@@ -179,6 +197,18 @@ footer {
 	.containers {
 		flex-flow: row wrap;
 	}
+	#photos {
+		height: 100vh;
+		top: -8vh;
+		section {
+			width: 80%;
+			flex-flow: row wrap;
+			img {
+				width: 15vw;
+				height: 15vw;
+			}
+		}
+	}
 	.heroInfo {
 		max-width: 50%;
 		bottom: 0px;
@@ -205,9 +235,29 @@ footer {
 		position: relative;
 	}
 	.store {
+		top: 0px;
 		section {
-			width: 24vw;
-			height: 24vw;
+			width: 22vw;
+			img {
+				height: 22vw;
+				width: 100%;
+			}
 		}
+	}
+	#drops {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+		div {
+			border: none;
+		}
+	}
+}
+@media only screen and (min-height: 500px) {
+	#releases,
+	#store {
+		height: fit-content;
 	}
 }

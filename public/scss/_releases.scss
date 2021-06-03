@@ -1,13 +1,15 @@
 #releases {
 	position: relative;
-	height: fit-content;
-	padding: 2vh 0;
+
+	height: max-content;
+	padding: 2vh 0 8vh 0;
+	top: -24px;
 	.white-title {
 		position: relative;
-		// top: 7vh;
 		margin-left: 9vw;
 	}
 	button {
+		position: relative;
 		float: right;
 		top: 4.4vh;
 
@@ -17,13 +19,13 @@
 	width: 100vw;
 	&::before {
 		position: absolute;
-		top: -3vh;
+		// top: -3vh;
 		left: 0;
 		width: 62%;
-		bottom: 0;
+
 		background-color: rgba(255, 255, 255, 0.09);
 		content: '';
-		height: inherit;
+		height: 104vh;
 	}
 	align-content: center;
 }
@@ -39,7 +41,7 @@
 	position: relative;
 	display: flex;
 	flex-flow: row wrap;
-	width: 50%;
+	max-width: 40%;
 	min-width: 200px;
 	flex-basis: 1;
 }

@@ -34,8 +34,24 @@ $main-font: Sen, sans-serif;
 	font-family: $font-highlight;
 	font-size: min(2.5vh, 14px, 2.5vw);
 }
+legend {
+	color: white;
+	font-family: $font-highlight;
+	font-size: min(4.5vh, 28px, 4.5vw);
+}
+.price {
+	color: black;
+	font-family: $font-highlight;
+	font-size: min(2.5vh, 14px, 2.5vw);
+}
 .venue {
 	color: white;
+	font-family: $main-font;
+	font-size: min(4.5vh, 28px, 4.5vw);
+	font-weight: 800;
+}
+.product-name {
+	color: black;
 	font-family: $main-font;
 	font-size: min(4.5vh, 28px, 4.5vw);
 	font-weight: 800;

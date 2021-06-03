@@ -20,19 +20,16 @@ export default class Photos extends React.Component {
 		};
 	}
 	render() {
-		console.log(this.state.photos);
 		return (
-			<>
-				<section id='photos'>
-					<h1 className='white-title'>Photos</h1>
-				</section>
+			<section id='photos'>
+				<h1 className='white-title'>Photos</h1>
 				<section>
 					{this.state.photos.map((each, idx) => (
 						<img src={each} key={idx} className='photo'></img>
 					))}
 				</section>
 				<button>View All Photos</button>
-			</>
+			</section>
 		);
 	}
 }

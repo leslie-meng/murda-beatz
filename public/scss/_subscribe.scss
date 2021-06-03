@@ -1,0 +1,58 @@
+#subscribe {
+	display: flex;
+	position: relative;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	margin-left: 8vw;
+	height: 100%;
+	.white-title {
+		align-self: start;
+		position: relative;
+	}
+	form {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		flex-direction: column;
+	}
+	color: white;
+	[type='email'] {
+		color: #f6c82a;
+		background-color: rgba(0, 0, 0, 0);
+		border-bottom: 2px solid #f6c82a;
+		width: 100%;
+	}
+	::placeholder {
+		color: #f6c82a;
+	}
+	#drops {
+		display: flex;
+		width: 100%;
+		padding-bottom: 20px;
+		div {
+			width: 50%;
+		}
+	}
+	fieldset {
+		border: 0;
+		padding: 2vh 0 0 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		font-size: small;
+	}
+
+	[type='checkbox'] {
+		vertical-align: middle;
+		width: 10px;
+	}
+	a {
+		color: #f6c82a;
+		&:hover {
+			color: black;
+			font-size: calc(Math.min(Math.max(8.2vw, 14px), 20px));
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #f6c82a;
+		}
+	}
+}
